@@ -5,7 +5,8 @@ The source for little notes to my girlfriend on the Internet. The notes are priv
 
 ## Quickstart
 
-Ensure you have [Gulp](http://gulpjs.com/) installed globally with `$ npm install -g gulp bower-cli`
+Ensure you have [Gulp](http://gulpjs.com/) installed globally with `$ npm install -g gulp bower-cli`.
+Also ensure you have Ruby, the DevKit, and Jekyll installed as well.
 
 1. Clone the repo: `$ git clone https://github.com/ciscoo/thuy.git`
 2. Run `$ npm install` to install all the `devDependencies`
