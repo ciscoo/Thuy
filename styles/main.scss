@@ -1,0 +1,62 @@
+@import url(http://fonts.googleapis.com/css?family=Ovo);
+@import url(http://fonts.googleapis.com/css?family=Muli);
+@import "susy";
+
+$title-color: #8EC9D2;
+$text-color: #B7B8BF;
+
+body {
+  background: #2E334A;
+  color: $text-color;
+  font-family: 'Muli', sans-serif;
+  padding: 1em;
+}
+
+.container {
+  @include container(60em);
+}
+
+header {
+  font-family: 'Ovo', sans-serif;
+  color: $title-color;
+}
+
+h1 {
+  font-size: 2.5em;
+  margin-bottom: 0;
+  padding: 0;
+  @media (max-device-width : 373px) {
+      font-size: 1.8em;
+  }
+}
+
+h2 {
+  margin: 0;
+}
+
+.list {
+  ul {
+    list-style: none;
+  }
+  li:before {
+    content: "";
+    border-color: transparent $text-color;
+    border-style: solid;
+    border-width: 0.35em 0 0.35em 0.45em;
+    display: block;
+    height: 0;
+    width: 0;
+    left: -1em;
+    top: 0.9em;
+    position: relative;
+  }
+}
+
+a {
+  color: $text-color;
+  text-decoration: none;
+  font-weight: bold;
+  &:hover {
+    color: #fff;
+  }
+}
