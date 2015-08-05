@@ -25,7 +25,7 @@ gulp.task('images', () => {
 gulp.task('styles', () => {
   const AUTOPREFIXER_BROWSERS = ['last 2 versions, > 5%'];
 
-  return gulp.src(['styles/**/*.css'])
+  return gulp.src(['styles/**/*.scss'])
     .pipe($.sourcemaps.init())
     .pipe($.sass({
       includePaths: ['bower_components/susy/sass'],
@@ -33,8 +33,8 @@ gulp.task('styles', () => {
     }).on('error', $.sass.logError))
     .pipe($.autoprefixer(AUTOPREFIXER_BROWSERS))
     .pipe($.sourcemaps.write())
-    .pipe(gulp.dest('_site'))
-    .pipe($.size({title: '_site'}));
+    .pipe(gulp.dest('_site/styles'))
+    .pipe($.size({title: 'styles'}));
 });
 
 gulp.task('serve', ['styles', 'jekyll:build', 'images'], () => {
