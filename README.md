@@ -1,6 +1,6 @@
 ## Overview
 
-The source for little notes to my girlfriend on the Internet. The notes are private and will not be uploaded, but everything else will. Built with [Sass](http://sass-lang.com/), [Gulp](http://gulpjs.com/), [Bower](http://bower.io/),
+The source for little notes to a girl. Built with [Sass](http://sass-lang.com/), [Gulp](http://gulpjs.com/), [Bower](http://bower.io/),
 [Susy](http://susy.oddbird.net/), and [Jekyll](jekyllrb.com)
 
 ## Quickstart
